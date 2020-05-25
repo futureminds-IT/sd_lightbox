@@ -2,6 +2,6 @@
 
 This extension integrates a responsive and touch-friendly lightbox into TYPO3.
 
-## This is just a compatibility fork usable for updates to Typo3 10. No support at all. You shouldn't use it new installations. 
+## This is just a compatibility fork usable for updates to Typo3 10. No support at all. You shouldn't use it in fresh installations. 
 
 Original source: https://extensions.typo3.org/extension/sd_lightbox/
