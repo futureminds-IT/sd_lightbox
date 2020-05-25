@@ -1,0 +1,43 @@
+page {
+  includeCSS {
+    sd_lightbox10 = {$plugin.sd_lightbox.view.cssFile}
+  }
+  includeJSFooter {
+    sd_lightbox10 = EXT:sd_lightbox/Resources/Public/JavaScript/sd_lightbox.js
+  }
+  footerData {
+    100 = FLUIDTEMPLATE
+  	100 {
+  		file = {$plugin.sd_lightbox.view.templateRootPath}Index.html
+      layoutRootPath = {$plugin.sd_lightbox.view.layoutRootPath}
+      partialRootPath = {$plugin.sd_lightbox.view.partialRootPath}
+      extbase {
+        controllerExtensionName = sd_lightbox
+      }
+      variables {
+        counter = TEXT
+        counter.value = {$plugin.sd_lightbox.enable.counter}
+        close = TEXT
+        close.value = {$plugin.sd_lightbox.enable.close}
+        fullscreen = TEXT
+        fullscreen.value = {$plugin.sd_lightbox.enable.fullscreen}
+        download = TEXT
+        download.value = {$plugin.sd_lightbox.enable.download}
+        arrows = TEXT
+        arrows.value = {$plugin.sd_lightbox.enable.arrows}
+        caption = TEXT
+        caption.value = {$plugin.sd_lightbox.enable.caption}
+        overlay = TEXT
+        overlay.value = {$plugin.sd_lightbox.enable.overlay}
+      }
+  	}
+  }
+}
+
+[{$plugin.sd_lightbox.javascript.addJQuery} == '1']
+page.includeJSFooterlibs.sd_lightbox10 = {$plugin.sd_lightbox.javascript.sourceJQuery}
+[end]
+
+[{$plugin.sd_lightbox.javascript.addHammerjs} == '1']
+page.includeJSFooterlibs.sd_lightbox20 = {$plugin.sd_lightbox.javascript.sourceHammerjs}
+[end]

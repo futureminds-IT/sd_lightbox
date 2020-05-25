@@ -1,0 +1,42 @@
+## Define custom categories
+# customsubcategory=javascript=Include JavaScripts
+plugin {
+  sd_lightbox {
+    javascript {
+      # cat=plugin.sd_lightbox/javascript/a; type=boolean; label=Include jQuery
+      addJQuery = 0
+      # cat=plugin.sd_lightbox/javascript/b; type=text; label= jQuery Source
+			sourceJQuery = EXT:sd_lightbox/Resources/Public/JavaScript/jquery-3.1.1.min.js
+      # cat=plugin.sd_lightbox/javascript/c; type=boolean; label=Include Hammer.js
+      addHammerjs = 0
+      # cat=plugin.sd_lightbox/javascript/d; type=text; label= hammer.js Source
+			sourceHammerjs = EXT:sd_lightbox/Resources/Public/JavaScript/hammer.min.js
+    }
+    enable {
+      # cat=plugin.sd_lightbox/enable/a; type=boolean; label=Enable counter
+      counter = 1
+      # cat=plugin.sd_lightbox/enable/b; type=boolean; label=Enable close button
+      close = 1
+      # cat=plugin.sd_lightbox/enable/c; type=boolean; label=Enable fullscreen button
+      fullscreen = 1
+      # cat=plugin.sd_lightbox/enable/d; type=boolean; label=Enable download button
+      download = 1
+      # cat=plugin.sd_lightbox/enable/e; type=boolean; label=Enable previous and next buttons
+      arrows = 1
+      # cat=plugin.sd_lightbox/enable/f; type=boolean; label=Enable caption
+      caption = 1
+      # cat=plugin.sd_lightbox/enable/g; type=boolean; label=Enable close overlay
+      overlay = 1
+    }
+    view {
+      # cat=plugin.sd_lightbox/file/a; type=string; label=Path to template root
+      templateRootPath = EXT:sd_lightbox/Resources/Private/Templates/
+      # cat=plugin.sd_lightbox/file/b; type=string; label=Path to template partials
+      partialRootPath = EXT:sd_lightbox/Resources/Private/Partials/
+      # cat=plugin.sd_lightbox/file/c; type=string; label=Path to template layouts
+      layoutRootPath = EXT:sd_lightbox/Resources/Private/Layouts/
+      # cat=plugin.sd_lightbox/file/d; type=string; label=Path to CSS
+      cssFile = EXT:sd_lightbox/Resources/Public/Css/sd_lightbox.css
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<f:layout name="Default"/>
+<f:section name="Page">
+    <div id="sd-lightbox-top">
+        <f:if condition="{counter} == 1">
+            <f:then>
+                <f:render partial="Counter" section="Page" arguments="{_all}"/>
+            </f:then>
+        </f:if>
+
+        <f:if condition="{close} == 1">
+            <f:then>
+                <f:render partial="Close" section="Page" arguments="{_all}"/>
+            </f:then>
+        </f:if>
+
+        <f:if condition="{fullscreen} == 1">
+            <f:then>
+                <f:render partial="Fullscreen" section="Page" arguments="{_all}"/>
+            </f:then>
+        </f:if>
+
+        <f:if condition="{download} == 1">
+            <f:then>
+                <f:render partial="Download" section="Page" arguments="{_all}"/>
+            </f:then>
+        </f:if>
+    </div>
+
+    <div id="sd-lightbox-images"></div>
+
+    <f:if condition="{arrows} == 1">
+        <f:then>
+            <f:render partial="Arrows" section="Page" arguments="{_all}"/>
+        </f:then>
+    </f:if>
+
+    <f:if condition="{caption} == 1">
+        <f:then>
+            <f:render partial="Caption" section="Page" arguments="{_all}"/>
+        </f:then>
+    </f:if>
+
+    <f:if condition="{overlay} == 1">
+        <f:then>
+            <f:render partial="Overlay" section="Page" arguments="{_all}"/>
+        </f:then>
+    </f:if>
+</f:section>

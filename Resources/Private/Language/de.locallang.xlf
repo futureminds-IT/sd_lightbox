@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-12-09T15:24:10Z" product-name="sd_lightbox">
+		<header/>
+		<body>
+			<trans-unit id="close" xml:space="preserve">
+				<source>Close</source>
+				<target>Schließen</target>
+			</trans-unit>
+			<trans-unit id="previous" xml:space="preserve">
+				<source>Previous image</source>
+				<target>Vorheriges Bild</target>
+			</trans-unit>
+			<trans-unit id="next" xml:space="preserve">
+				<source>Next image</source>
+				<target>Nächstes Bild</target>
+			</trans-unit>
+			<trans-unit id="download" xml:space="preserve">
+				<source>Download image</source>
+				<target>Bild herunterladen</target>
+			</trans-unit>
+			<trans-unit id="fullscreen" xml:space="preserve">
+				<source>Toggle fullscreen</source>
+				<target>Vollbild umschalten</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
